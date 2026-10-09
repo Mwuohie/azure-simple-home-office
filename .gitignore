@@ -1,0 +1,20 @@
+# Terraform local state and cache (state can contain resource IDs and secrets)
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Variable files that may hold secrets
+*.tfvars
+*.tfvars.json
+
+# Local overrides and CLI config
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Keep .terraform.lock.hcl committed so provider versions are reproducible
